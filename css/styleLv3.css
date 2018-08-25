@@ -1,0 +1,256 @@
+/* My Framework */
+
+* {box-sizing: border-box}
+body {font-family: 'Open Sans', sans-serif}
+.t-center {text-align: center}
+.m-color {color: #f7600e}
+.m-background {background-color: #f7600e}
+.upper {text-transform: uppercase}
+.container {width: 1170px;margin: 0 auto;height:100%;position: relative}
+.overlay {
+    background-color: rgba(49,55,61, .9);
+    width: 100%;
+    height: 100%
+}
+.hidden {display: none}
+p {line-height: 1.5}
+
+/* Start Header */
+
+header {
+    background-image: url("../img/macbook.png");
+    background-size: cover;
+    color: #fff
+}
+
+header button {
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #aaa;
+    border-radius: 12px;
+    padding: 8px 28px;
+    margin:10px 5px 60px 0
+}
+
+header button:hover {
+    background-color: #f7600e;
+    border: 1px solid #f7600e;
+    cursor: pointer;
+    transition: all .5s ease-in-out
+}
+
+header nav {padding: 10px 0;position: absolute;width:100%;top:0;left:0}
+
+header nav h4,
+header nav h3{
+    margin: 0;padding: 0;
+    display:inline-block;
+    font-weight: normal
+}
+
+header nav h3 span {font-weight: bold}
+
+header nav .links {float: right}
+
+header nav .links i {margin: 0 0 0 5px}
+
+header section h1 {font-weight: 800;margin: 0}
+
+header section p {color: #e2e2e2;font-size:15px;margin: 10px 0 30px}
+
+header .arrow {
+    padding: 10px 0;position: absolute;bottom: 0;right: 0;width: 100%
+}
+
+header .arrow i {border: 1px solid #fff;border-radius: 50%;width: 25px;height: 25px;line-height: 25px;font-size:12px;cursor: pointer}
+
+/* End Header */
+
+/* Start Features */
+
+.features {padding: 80px 0; display:flex}
+
+.features .box {width:20%;float:left;margin-right: 6.66666%}
+
+.features .box:last-child {margin-right: 0;}
+
+.features .box i {border: 1px solid #ccc;width:120px;height:120px;line-height:120px;border-radius: 50%;color: #f7600e}
+
+.features .box i:hover {border: 1px solid #f7600e;background-color: #f7600e;color: #fff;transition: all .5s ease-in-out}
+
+.features .box h3 {text-transform: uppercase;color: #505050}
+
+.features .box p {color: #666}
+
+/* End Features */
+
+/* Start Subscribe */
+
+.subscribe {background: url(../img/tablet.png);background-size: cover}
+
+.subscribe form {padding: 100px 0;text-align: center}
+
+.subscribe form input[type="email"] {
+    width: 500px;height: 40px;border: none;border-radius: 8px;padding: 0 10px
+}
+
+.subscribe form input[type="submit"] {
+    width: 200px;height: 40px;border-radius: 8px;border:none;background-color: #f7600e;color: #FFF;text-transform:uppercase;font-size: 14px;margin-left: 20px;font-weight: bold
+}
+
+/* End Subscribe */
+
+/* Start Our Work */
+
+.our-work {padding: 70px 0;overflow: hidden}
+
+.our-work h1,
+.our-team h1 {font-weight: 800}
+
+.our-work h1 ~ p,
+.our-team h1 ~ p {padding: 0 330px;margin: 10px 0 80px}
+
+.our-work .item {
+    width: 32%;
+    float: left;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 2%;
+    position: relative
+}
+
+.our-work .item:nth-child(2),
+.our-work .item:nth-child(5),
+.our-work .item:nth-child(8) {
+    margin: 0 2%
+}
+
+.our-work .item img {
+    width: 100%;
+    height:100%;
+    top:0;right:0;left:0;bottom:0}
+
+.our-work .item .over {
+    width: 100%;
+    height:100%;
+    top:0;right:0;left:0;bottom:0;
+    background-color: rgba(247,96,14,.9);
+    position: absolute;
+    color: #FFF;
+    padding: 22% 0;
+    display: none
+}
+
+.our-work .item:hover .over {
+    display: block
+}
+
+.our-work .item .over button {
+    background: transparent;width: 200px;height:50px;border: 1px solid #fff;border-radius: 8px;margin: 20px 0 0;color: #FFF;font-weight: bold;font-size:14px;text-transform: uppercase;cursor: pointer;transition: all .5s ease-in-out
+}
+
+.our-work .item .over button:hover {
+    background-color: #fff;
+    color: #f7600e
+}
+
+.our-work .container > button {
+    background: transparent;width: 200px;height:50px;border: 1px solid #aaa;border-radius: 8px;margin: 60px 0 0;color: #505050;font-weight: bold;font-size:14px;transition: all .5s ease-in-out;cursor: pointer
+}
+
+.our-work .container > button:hover {
+    background-color: #f7600e;
+    color: #fff;
+    border: 1px solid #f7600e
+}
+
+/* End Our Work */
+
+/* Start Testimonials */
+
+.testim {background: url(../img/testimonials.png);position: relative}
+
+.testim .container {position: relative}
+
+.testim .slide {padding: 50px 0;color: #ddd}
+
+.testim .slide img {width: 100px;height: 100px; border-radius: 50%}
+
+.testim .slide p {font-style: italic;margin: 30px 0 40px}
+
+.testim .slide span {font-weight: bold}
+
+.testim i {vertical-align: middle;position: absolute;top:50%;color: #999;cursor: pointer}
+.testim i:first-of-type {float: left;left: 10px}
+.testim i:last-of-type {float: right;right: 10px}
+
+/* End Testimonials */
+
+/* Start Our Team */
+
+.our-team {padding: 50px 0;overflow: hidden}
+
+.our-team .over {width: 100%;height:100%;top:0;left:0}
+
+.our-team .person {width: 25%; float: left;border-radius: 10px;overflow: hidden;filter:gray;filter: grayscale(1);color: #666;transition: all .5s ease-in-out}
+
+.our-team .person:hover {
+    filter: grayscale(0);filter: none;
+    transform: scale(1.1);color: #222
+}
+
+.our-team .person:hover i:nth-of-type(1) {color: #3b5998}
+.our-team .person:hover i:nth-of-type(2) {color: #55acee}
+.our-team .person:hover i:nth-of-type(3) {color: #dc4e41}
+
+.our-team .person h3 {text-transform: uppercase}
+
+.our-team .person i {margin: 0 4px}
+
+.our-team .person img {width:270px;height:340px}
+
+/* End Our Team */
+
+/* Start Contact */
+
+.contact {background: url(../img/city.png)}
+
+.contact .overlay {padding:50px 0;color: #fff;overflow: hidden}
+
+.contact form {width:700px;margin: 40px auto}
+
+.contact input[type="email"],
+.contact input[type="text"] {display: block;width:48%;height: 40px;border-radius: 10px;padding: 0 20px;border: none;color: #666}
+
+.contact input[type="email"] {float: left}
+.contact input[type="text"] {float: right}
+
+.contact textarea {border:none;border-radius: 10px;width:100%;height: 100px;padding: 10px 20px;margin: 30px 0;color: #666}
+
+.contact button {
+    width: 150px;height: 40px;border-radius: 8px;border:none;background-color: #f7600e;color: #FFF;text-transform:uppercase;font-size: 14px;margin-left: 20px;float: left;cursor: pointer
+}
+
+.contact .social {float: right}
+
+.contact .social i {height:40px;width:40px;border-radius:50%;line-height:40px;margin: 0 5px;box-shadow: 0 0 10px 1px}
+
+.contact .social i:nth-of-type(1) {color: #3b5998}
+.contact .social i:nth-of-type(2) {color: #55acee}
+.contact .social i:nth-of-type(3) {color: #dc4e41}
+.contact .social i:nth-of-type(4) {color: #009bd5}
+
+/* End Contact */
+
+/* Start Footer */
+
+footer {padding: 30px 0;background-color: #3b434c;color: #ddd;overflow: hidden;font-size: 14px}
+
+footer .copy {float: left}
+
+footer .design {float: right}
+
+footer .com {font-weight: bold;color: #fff}
+
+/* End Footer */
